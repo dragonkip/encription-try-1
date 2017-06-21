@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Decryption</title>
+    </head>
+    <body>
+        <h3>This page decrypts stuff</h3>
+        <p>Note this page can only be used once</p>
+        <button onclick="main()">Decrypt</button>
+        <script>
+            
+            var main = function() {
+            
+            var text = prompt("What do you want decrpted?");
+                var output = ["Output:"];
+                var num = 0;
+                var en = text.substring(num+1,num+5);
+               
+            
+//===================================================
+            
+            var Encrypt = function(character,value1,value2,value3) {
+                console.log("function en "+en);
+                console.log("valuez"+value1);
+                    if(en === value1 || en === value2 || en === value3) { 
+                    output.push(character);
+      
+                    }
+            }
+                
+            
+                console.log(output);
+//==================================================
+                
+                while(text.length >= num ){
+                    console.log("num is "+num);
+                    en = text.substring(num+1,num+5);
+                    num = num += 5;    
+                    
+               
+                Encrypt(" ","4758","4754","3487")
+                Encrypt("q","6748","3755","7395")
+                Encrypt("w","5730","9743","8773")
+                Encrypt("e","7583","5794","5729")
+                Encrypt("r","7535","7568","5252")
+                Encrypt("t","1744","4739","6584")
+                Encrypt("y","7448","7585","9384")
+                Encrypt("u","9249","5745","7536")
+                Encrypt("i","0375","0338","0243")
+                Encrypt("o","4786","3549","5783")
+                Encrypt("p","5733","4738","4663")
+                Encrypt("a","3635","0157","4703")
+                Encrypt("s","0147","7584","4024")
+                Encrypt("d","4364","0662","1946")
+                Encrypt("f","0737","4780","4828")
+                Encrypt("g","3838","7374","7368")
+                Encrypt("h","2259","3367","9646")
+                Encrypt("j","3946","3538","4635")
+                Encrypt("k","7336","2563","3736")
+                Encrypt("l","6366","3368","1935")
+                Encrypt("z","2850","2558","2859")
+                Encrypt("x","1330","3833","2930")
+                Encrypt("c","4294","5489","5937")
+                Encrypt("v","9637","4965","1245")
+                Encrypt("b","7583","4964","1053")
+                Encrypt("n","2453","3554","3537")
+                Encrypt("m","3634","4664","5374")
+                Encrypt(".","4793","8254","2855")
+                
+                
+                
+            } 
+                document.write(output);
+            }
+            
+        </script>
+    </body>
+</html>
